@@ -34,7 +34,7 @@ function Carousel(props) {
     }
 
     function handleDelete(){
-        
+       
     }
 
     function handleAdd(){
@@ -50,6 +50,7 @@ function Carousel(props) {
                 update={() => handleUpdate()}
                 delete={() => handleDelete()}
                 add={() => handleAdd()}
+                updateStatus={updateValues}
               />
               </div>
       );
