@@ -16,15 +16,15 @@ function Employee(props) {
       <input disabled = {(props.update)? "" : "disabled"} className="employee-name" value={`${props.data.name.first} ${props.data.name.last}`}/>
       <div className="line-item">
         <p className="item-title">City: </p>
-        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={JSON.stringify(props.data.city)}/>
+        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={(props.data.city)? props.data.city : 'In the Country'}/>
       </div>
       <div className="line-item">
         <p className="item-title">Country: </p>
-        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={JSON.stringify(props.data.country)}/>
+        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={(props.data.country)? props.data.country : 'International Man of Mystery'}/>
       </div>
       <div className="line-item">
         <p className="item-title">Employer: </p>
-        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={JSON.stringify(props.data.employer)}/>
+        <input disabled = {(props.update)? "" : "disabled"} className="item-info" value={(props.data.employer)? props.data.employer : 'Unemployed'}/>
       </div>
       <div className="array-item">
         <p className="array-title">Favorite Movies: </p>
