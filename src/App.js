@@ -4,7 +4,6 @@ import data from './data/data';
 
 import Carousel from './components/Carousel';
 
-
 function App() {
   const [employees, setEmployees] = useState(data);
 
